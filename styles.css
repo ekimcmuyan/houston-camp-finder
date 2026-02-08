@@ -660,6 +660,60 @@ body {
   box-shadow: 0 1px 4px rgba(0,0,0,0.15);
 }
 
+.browse-section-subtitle {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+}
+.dropoff-icon {
+  font-size: 1.1rem;
+}
+
+/* ── Scroll Row Wrapper ── */
+.scroll-row-wrapper {
+  position: relative;
+}
+.scroll-hint {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 12px;
+  width: 56px;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 4px;
+  background: linear-gradient(to right, transparent 0%, var(--bg) 70%);
+  transition: opacity 0.3s;
+  z-index: 2;
+}
+.scroll-hint.hidden {
+  opacity: 0;
+}
+.scroll-hint-arrow {
+  pointer-events: auto;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 2px solid var(--border);
+  color: var(--primary);
+  font-size: 1.3rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  animation: scrollBounce 1.5s ease-in-out infinite;
+}
+@keyframes scrollBounce {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(4px); }
+}
+
 .recommended-scroll-row {
   display: flex;
   gap: 16px;
@@ -1036,6 +1090,8 @@ body {
   .wizard-container { padding: 24px 20px 20px; }
   .wizard-title { font-size: 1.2rem; }
   .recommended-scroll-row .camp-card { min-width: 300px; }
+  .scroll-hint { width: 48px; }
+  .scroll-hint-arrow { width: 30px; height: 30px; font-size: 1.2rem; }
 }
 @media (max-width: 480px) {
   .view-nav { gap: 2px; padding: 8px 8px; }

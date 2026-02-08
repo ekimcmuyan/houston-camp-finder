@@ -8,8 +8,8 @@
   const PROFILE_KEY = "houstonCampFinderProfile";
   const SCHEDULE_KEY = "houstonCampFinderSchedule";
   const HOWTO_SEEN_KEY = "houstonCampFinderHowtoSeen";
-  const KID_COLORS = ["#00f0ff", "#ff2d95", "#39ff14", "#ffe156"];
-  const ALL_KIDS_COLOR = "#00f0ff";
+  const KID_COLORS = ["#00B4D8", "#FF6B6B", "#2D6A4F", "#9B5DE5"];
+  const ALL_KIDS_COLOR = "#00B4D8";
 
   // ── State ──
   let currentCategory = "all-camps";
@@ -125,7 +125,7 @@
     const r = parseInt(color.slice(1, 3), 16);
     const g = parseInt(color.slice(3, 5), 16);
     const b = parseInt(color.slice(5, 7), 16);
-    return `rgba(${r},${g},${b},0.18)`;
+    return `rgba(${r},${g},${b},0.12)`;
   }
 
   function ageMatches(ageRange, kids) {
@@ -697,7 +697,7 @@
 
     const allCount = getCampCountForCategory("all-camps");
     const allActive = currentCategory === "all-camps" ? "active" : "";
-    const allBg = currentCategory === "all-camps" ? "background:var(--neon-pink);border-color:var(--neon-pink);box-shadow:var(--glow-pink);" : "";
+    const allBg = currentCategory === "all-camps" ? "background:var(--primary);color:#fff;border-color:var(--primary);" : "";
 
     let html = `<button class="cat-tab ${allActive}" style="${allBg}" data-cat="all-camps">
       All Camps <span class="cat-count">(${allCount})</span>

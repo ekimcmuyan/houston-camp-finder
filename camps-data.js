@@ -194,13 +194,13 @@ const NEIGHBORHOOD_AREAS = [
   }
 ];
 
-// ── Main Categories (80s neon palette) ──
+// ── Main Categories (tropical palette) ──
 const CATEGORIES = [
-  { id: "sports",    label: "Sports & Athletics",         icon: "\u26BD", color: "#ff2d95" },
-  { id: "arts",      label: "Arts & Creative Expression", icon: "\uD83C\uDFA8", color: "#b537f2" },
-  { id: "stem",      label: "STEM & Academic",            icon: "\uD83E\uDDEA", color: "#00f0ff" },
-  { id: "adventure", label: "Adventure & Wilderness",     icon: "\uD83C\uDF32", color: "#39ff14" },
-  { id: "life",      label: "Life Skills & Specialized",  icon: "\uD83D\uDEE0\uFE0F", color: "#ffe156" }
+  { id: "sports",    label: "Sports & Athletics",         icon: "\u26BD", color: "#FF6B6B" },
+  { id: "arts",      label: "Arts & Creative Expression", icon: "\uD83C\uDFA8", color: "#9B5DE5" },
+  { id: "stem",      label: "STEM & Academic",            icon: "\uD83E\uDDEA", color: "#00B4D8" },
+  { id: "adventure", label: "Adventure & Wilderness",     icon: "\uD83C\uDF32", color: "#2D6A4F" },
+  { id: "life",      label: "Life Skills & Specialized",  icon: "\uD83D\uDEE0\uFE0F", color: "#FFD166" }
 ];
 
 // ── Subcategories ──

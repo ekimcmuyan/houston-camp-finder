@@ -8,8 +8,8 @@
   const PROFILE_KEY = "houstonCampFinderProfile";
   const SCHEDULE_KEY = "houstonCampFinderSchedule";
   const HOWTO_SEEN_KEY = "houstonCampFinderHowtoSeen";
-  const KID_COLORS = ["#00B4D8", "#FF6B6B", "#2D6A4F", "#9B5DE5"];
-  const ALL_KIDS_COLOR = "#00B4D8";
+  const KID_COLORS = ["#2e86de", "#e84393", "#00b894", "#f39c12"];
+  const ALL_KIDS_COLOR = "#3E6B48";
 
   // ── State ──
   let currentCategory = "all-camps";
@@ -758,7 +758,7 @@
 
     const allCount = getCampCountForCategory("all-camps");
     const allActive = currentCategory === "all-camps" ? "active" : "";
-    const allBg = currentCategory === "all-camps" ? "background:var(--primary);color:#fff;border-color:var(--primary);" : "";
+    const allBg = currentCategory === "all-camps" ? "background:#3D2B1F;border-color:#3D2B1F;" : "";
 
     let html = `<button class="cat-tab ${allActive}" style="${allBg}" data-cat="all-camps">
       All Camps <span class="cat-count">(${allCount})</span>
